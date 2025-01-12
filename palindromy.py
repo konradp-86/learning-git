@@ -5,5 +5,8 @@ def is_palindrome(word):
         print(f"{original_word}: True")
     else:
         print(f"{original_word}: False")
-word_to_check = input("Jakie słowo sprawdzić? ")
-is_palindrome(word_to_check) 
+while True:
+    word_to_check = input("Jakie słowo sprawdzić? (lub wpisz 'exit', aby zakończyć) ")
+    if word_to_check.lower() == 'exit':
+        break
+    is_palindrome(word_to_check)
