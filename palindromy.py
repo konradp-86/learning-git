@@ -5,7 +5,5 @@ def is_palindrome(word):
         print(f"{original_word}: True")
     else:
         print(f"{original_word}: False")
-is_palindrome("kajak")  
-is_palindrome("potop")  
-is_palindrome("python")  
-is_palindrome("A to kanapa pana Kota")  
+word_to_check = input("Jakie słowo sprawdzić? ")
+is_palindrome(word_to_check) 
